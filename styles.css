@@ -1,8 +1,6 @@
 body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
     text-align: center;
-    font-size: 16px;
-    line-height: 1.5;
 }
 #main{
     margin: 30px 8px;
@@ -12,6 +10,12 @@ body{
     
 }
 
+#image{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
 
 
 #img-div {
@@ -20,14 +24,15 @@ body{
 }
 
 #img-caption{
-    margin: 15px 0 5px 0;
+    margin: 25px 20px;
     font-size: 15px;
     color: darkgrey;
+    position: relative;
+    bottom: 15px;
+
 }
 
-figcaption{
-    display: block;
-}
+
 
 li{
     display: list-item;
@@ -35,9 +40,12 @@ li{
 }
 
 ul{
-    width: 550px;
+    margin: 0px auto 0px auto;
+    max-width: 550px;
     text-align: left;
-    margin: 0 auto 0 auto;
+    height: auto;
+    
+    
     
 }
 
@@ -51,8 +59,20 @@ p{
     max-width: 545px;
     margin: 45px auto 50px auto;
     text-align: left;
+    height: auto;
 }
 
 cite{
     color: darkgrey;
+}
+
+@media (max-width: 460px)
+#main{
+    margin:0;
+}
+
+@media (max-width: 460px)
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
 }
